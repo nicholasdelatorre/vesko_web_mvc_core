@@ -1,0 +1,20 @@
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using VeskoWeb.Domain.Models;
+
+namespace VeskoWeb.DataBase.Mapping
+{
+    public class TeamMemberMapping : BaseMapping<TeamMember>
+    {
+        public override void Configure(EntityTypeBuilder<TeamMember> builder)
+        {
+
+            base.Configure(builder);
+            builder.Property(c => c.Name).IsRequired();
+            builder.Property(c => c.ImagePath).IsRequired();
+            builder.Property(c => c.Role).IsRequired();
+        }
+    }
+}

@@ -1,0 +1,882 @@
+﻿/*==========================================================================================
+
+                                     DEFAULT VALUES:
+
+Font Family:            Roboto Condensed
+
+Greenish Blue:          #34C6D3                     (Buttons,Icons, Links, Lines and Background)   
+Steel GraY:             #41464B                     (Headings)    
+Blue Bayoux:            #64707B                     (Paragraphs)
+White:                  #FFF                        (Text With Black Backgrounds)
+Black                   #000                        
+
+==========================================================================================*/
+
+/* General CSS */
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+    color: #64707B;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+H3 {
+    color: #64707B;
+    text-transform: uppercase;
+}
+
+
+/*==========================================================================================
+
+                                         HOME
+
+==========================================================================================*/
+
+#home {
+    height: 700px;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url(../images/bg-home.jpg);
+}
+
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+
+
+#home-content-box-inner {
+    display: table-cell;
+    /* centraliza na vertical*/
+    vertical-align: middle;
+    /* centraliza na horizontal */
+    /* text-align: center; */
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    /* font-weight: 700; De acordo com as variações disponíveis no Roboto Condensed 300,300i,400,400i,700,700i */
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+/*==========================================================================================
+
+                                     PARALLAX (Generic)
+
+==========================================================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Parallax Effect */
+    background-attachment: fixed;
+}
+
+
+
+/*==========================================================================================
+
+                                      BUTTONS (Generic)
+
+==========================================================================================*/
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+    .btn-white:hover,
+    .btn-white:focus {
+        background-color: #fff !important;
+        color: #41464B;
+        border-color: #fff;
+    }
+
+.btn-blue {
+    border-color: #34C6D3;
+    color: #34C6D3;
+}
+
+    .btn-blue:hover,
+    btn-blue:focus {
+        background-color: #34C6D3;
+        color: #fff;
+    }
+
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    font-size: 22px;
+    padding: 10px 21px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    /* Foi utilizado o display none para o botão desaparecer e mostrar apenas com o evento criado pelo Jquery */
+    display: none;
+}
+
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 10px 18px;
+    border-width: 2px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #25D366;
+    background-color: #25D366 !important;
+    color: #fff;
+}
+
+    .btn-whatsapp:hover,
+    btn-whatsapp:focus {
+        background-color: #009846 !important;
+        color: #fff;
+        border-color: #009846;
+    }
+
+/*==========================================================================================
+
+                                        ANIMATE
+
+==========================================================================================*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: .5s;
+}
+
+#home-cover {
+    animation-delay: .1s;
+}
+
+#home-heading {
+    animation-delay: .1s;
+}
+
+#home-btn {
+    animation-delay: .5s;
+}
+
+/*==========================================================================================
+
+                                        CONTENT (Generic)
+
+==========================================================================================*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34C6D3;
+    margin: 0 auto 30px auto;
+}
+
+/*==========================================================================================
+
+                                        SERVICES
+
+==========================================================================================*/
+
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34C6D3;
+    float: left;
+    padding: 16px;
+    margin-right: 25px;
+    width: 85px;
+    height: 79px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34C6D3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+    margin: 0;
+    padding-left: 85px;
+}
+
+
+/*==========================================================================================
+
+                                        About
+
+==========================================================================================*/
+
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../images/bg-about.jpg);
+    border-left: 200px solid white;
+    border-top: 700px solid transparent;
+}
+
+/*==========================================================================================
+
+                                        Work
+
+==========================================================================================*/
+
+/* Remove espaçamento entre as fotos */
+
+.row.no-gutters .img-wrapper {
+    /* Faz com que o elemeto não se sobreponha a outros */
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    /* Faz com que o zoom acorra de uma forma mais lenta/suave */
+    transition: transform .5s;
+}
+
+    .img-wrapper img:hover {
+        /* scale: aumenta ou diminui o tamnaho do elemento*/
+        transform: scale(1.5);
+        /* Cursor fica em formato de lupa de zoon-in */
+        cursor: zoom-in;
+    }
+
+/*==========================================================================================
+
+                                        TEAM
+
+==========================================================================================*/
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation {
+    color: #34C6D3;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/*==========================================================================================
+
+                                        SOCIAL
+
+==========================================================================================*/
+
+.social-list {
+    padding-left: 0px;
+}
+
+    .social-list li {
+        list-style: none;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-top: 10px;
+    }
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-gray i {
+    color: #64707B;
+}
+
+.icon-white i {
+    color: #fff;
+}
+
+.social-icon i:hover {
+    color: #34C6D3;
+}
+
+
+/*==========================================================================================
+
+                                        Testimonial
+
+==========================================================================================*/
+
+#testimonials-cover {
+    background-image: url(../images/bg-testimonials.jpg);
+}
+
+#testimonials .content-box {
+    /* Efeito de opacidade */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#customer-testimonials {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    max-width: 120px;
+    margin: 0 auto 0 auto;
+}
+
+.testimonial blockquote {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+    .testimonial blockquote p {
+        color: #fff;
+    }
+
+    /* https://www.w3schools.com/cssref/pr_gen_quotes.asp */
+
+    /* before: Insert some text before the content of each <p> element */
+
+    .testimonial blockquote::before {
+        /* \201C: codigo de abrir áspas */
+        content: "\201C";
+        top: 0;
+        left: 100px;
+    }
+
+
+    .testimonial blockquote::after {
+        /* \201D: codigo de fecha áspas */
+        content: "\201D";
+        bottom: 0;
+        right: 100px;
+    }
+
+    .testimonial blockquote::before,
+    .testimonial blockquote::after {
+        font-size: 80px;
+        font-style: normal;
+        line-height: 1;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+    }
+
+.testimonial-author p {
+    color: #fff;
+    font-size: 17px;
+}
+
+    .testimonial-author p strong {
+        display: block
+    }
+
+
+/*==========================================================================================
+
+                                        PRICING
+
+==========================================================================================*/
+
+.pricing-box {
+    border: 3px solid #34C6D3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+h4.pricing-title {
+    background-color: #34C6D3;
+    color: #fff;
+    /* Faz com que o back grounfique apenas na largura da palavra */
+    display: inline-block;
+    /*padding: 15px 25px;*/
+    height: 50px;
+    width: 125px;
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+h3.pricing-value {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+    h3.pricing-value sup {
+        font-size: 28px;
+        font-weight: normal;
+        vertical-align: super;
+    }
+
+ul.pricing-spec {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+
+    ul.pricing-spec li p {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+.pricing-box-lg {
+    padding: 90px 0;
+    /* Retira as margens inseridas anteriormente para que possa ficar centralizado*/
+    margin: 0;
+    background-color: #34C6D3;
+}
+
+    .pricing-box-lg h4.pricing-title {
+        background-color: #fff;
+        color: #34C6D3;
+    }
+
+    .pricing-box-lg ul.pricing-spec li p {
+        color: #fff;
+    }
+
+/*==========================================================================================
+
+                                        STATS
+
+==========================================================================================*/
+
+#stats-cover {
+    background-image: url(../images/bg-stats.jpg);
+}
+
+#stats .content-box {
+    background-color: rgba(0,0,0,.8)
+}
+
+.stats-item {
+    padding: 100px 0;
+}
+
+    .stats-item i {
+        color: #34C6D3;
+    }
+
+    .stats-item h2 {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 1px;
+    }
+
+    .stats-item p {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+/*==========================================================================================
+
+                                        CLIENTS
+
+==========================================================================================*/
+
+.client {
+    padding: 40px 0;
+}
+
+/*==========================================================================================
+
+                                        CONTACT
+
+==========================================================================================*/
+
+footer {
+    background-color: #41464B;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1)
+}
+
+#contact-left h3, #contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    background-image: url(../images/world-map.png);
+    background-repeat: no-repeat;
+    /* Deixa do tamanho da área da div */
+    background-size: contain;
+}
+
+address {
+    color: #fff;
+}
+
+    address p {
+        color: #fff;
+    }
+
+#phone-fax-email span {
+    color: #fff;
+}
+
+address strong, #phone-fax-email strong {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+
+/*==========================================================================================
+
+                                        FOOTER BOTTOM
+
+==========================================================================================*/
+
+#footer-bottom {
+    /* bgc + TAB */
+    background-color: rgba(0,0,0,0.1);
+    /* p:30-0 + TAB */
+    padding: 30px 0;
+    /* mt:60 + TAB */
+    margin-top: 60px;
+}
+
+#footer-copyrigths p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    /* c:#fff + TAB */
+    color: #fff;
+    /* fz:16 + TAB */
+    font-size: 16px;
+    /* fw:300 + TAB */
+    font-weight: 300;
+}
+
+    #footer-menu ul {
+        /* lis:n + TAB */
+        list-style: none;
+        /* pl:0 + TAB */
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+        #footer-menu ul li {
+            /* d:ib + TAB */
+            display: inline-block;
+        }
+
+            #footer-menu ul li a {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 300;
+                /* m:0-10 */
+                margin: 0 10px;
+                /* td:n + TAB */
+                text-decoration: none;
+            }
+
+    #footer-menu a:hover {
+        color: #34C6D3;
+    }
+
+
+/*==========================================================================================
+
+                                        NAVIGATION
+
+==========================================================================================*/
+
+.navbar {
+    padding: 12px 0;
+    /* faz com que os efeitos da função de scroll demore um pouco mais na transação do background transparente  para a o background preto */
+    transition: all .5s ease-in-out;
+}
+
+.vesco-top-nav {
+    /* Efeito de transparência do menu */
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar-nav {
+    padding-left: 40px;
+}
+
+.nav {
+    padding-right: 30px;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+    .navbar-nav li a:hover {
+        background: none;
+        color: #34C6D3 !important;
+    }
+
+.active {
+    background: none !important;
+    color: #34C6D3 !important;
+}
+
+
+
+/*==========================================================================================
+
+                                    VALIDATE FORM
+
+==========================================================================================*/
+label.error {
+    color: #fff;
+    margin-top: 5px;
+}
+
+#submitContact {
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+
+/*==========================================================================================
+
+                                    UCCESS MODAL
+
+==========================================================================================*/
+
+
+.modal,
+.modal-box {
+    z-index: 900;
+}
+
+.modal-sandbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,.8);
+    overflow: hidden;
+}
+
+.modal-box {
+    position: relative;
+    width: 80%;
+    max-width: 920px;
+    margin: 100px auto;
+    animation-name: modalbox;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+    padding: 20px 40px;
+    background: #47CBD7;
+    color: #ffffff;
+}
+
+.modal-body {
+    background: #ECEFF1;
+    padding: 60px 40px;
+}
+
+/* Close Button */
+.close-modal {
+    text-align: right;
+    cursor: pointer;
+
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+    0% {
+        top: -250px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes modalbox {
+    0% {
+        top: -250px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* Aditional Styles */
+
+
+.modal-trigger, button {
+    top: 50%;
+    left: 50%;
+    padding: 20px 40px;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+.modal-trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: ease .2s;
+}
+
+button {
+    border: 1px solid #333333;
+    outline: none;
+    color: #333333;
+}
+
+.modal-trigger:hover {
+    padding: 20px 60px;
+}

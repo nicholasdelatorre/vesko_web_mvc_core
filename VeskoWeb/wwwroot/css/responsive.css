@@ -1,0 +1,70 @@
+/*==========================================================================================
+
+                             Bootstrap 4 Media Queries
+
+
+-	Grid System: https://getbootstrap.com/docs/4.1/layout/grid/
+-	Media Breakpoins: https://getbootstrap.com/docs/4.1/layout/overview/
+
+==========================================================================================*/
+
+/* Large Devices (Desktops & Laptops) */
+@media(min-width: 1200px) {
+    
+    /* OK */
+    
+}
+
+/* Medium Devices (Landscape Tablets & Medium Devices) */
+@media (min-width: 992px) and (max-width: 1199px){
+    
+    /* OK */
+    
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px){
+    
+    /* OK */
+    
+}
+
+/* Extra Small Devides (Landscape Phones & Portrait Tablets) */
+@media(max-width: 767px) {
+    
+    #footer-copyrigths {
+        
+        text-align: center;
+        
+    }
+
+    .testimonial blockquote {
+        padding: 15px 0 0 0;
+    }
+
+        .testimonial blockquote::before {
+            /* \201C: codigo de abrir áspas */
+            content: none;
+        }
+
+
+        .testimonial blockquote::after {
+            /* \201D: codigo de fecha áspas */
+            content: none;
+        }
+}
+
+
+/* Extra Small Devides (Smaller Devices) */
+@media(max-width: 480px) {
+    
+    
+    
+}
+
+/* Extra Small Devides (Smaller Devices) */
+@media(max-width: 320px) {
+    
+    
+    
+}
